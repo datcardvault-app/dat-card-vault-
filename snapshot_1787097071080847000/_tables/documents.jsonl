@@ -1,0 +1,16 @@
+{"name":"users","id":10001}
+{"name":"cards","id":10002}
+{"name":"labels","id":10003}
+{"name":"scanLogs","id":10004}
+{"name":"dailyEarnings","id":10005}
+{"name":"calendarNotes","id":10006}
+{"name":"earningsSnapshots","id":10007}
+{"name":"presence","id":10008}
+{"name":"teamMembers","id":10009}
+{"name":"teams","id":10010}
+{"name":"activityLogs","id":10011}
+{"name":"nudges","id":10012}
+{"name":"nudgeReplies","id":10013}
+{"name":"buyingDeals","id":10014}
+{"name":"sealedProducts","id":10015}
+{"name":"feedback","id":10016}
