@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
+    "@supabase/supabase-js": "^2.112.3",
     "@tanstack/react-query": "^5.101.1",
     "@types/escape-html": "^1.0.4",
     "@types/papaparse": "^5.5.2",
