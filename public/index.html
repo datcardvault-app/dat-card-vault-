@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <title>DatCARDVault – Scan · Store · Label</title>
+    <meta name="description" content="The pocket business assistant for TCG vendors. Scan, store and create QR price labels and scan barcodes for sealed product for Pokémon, Magic, Yu-Gi-Oh! and more." />
+    <meta name="author" content="DatCardVault" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://hercules-cdn.com/file_3dzmLjTtZEhTAwTQYzz2XFce"
+    />
+
+    <meta property="og:title" content="DatCARDVault – Scan · Store · Label" />
+    <meta property="og:description" content="The pocket business assistant for TCG vendors. Scan, store and create QR price labels and scan barcodes for sealed product for Pokémon, Magic, Yu-Gi-Oh! and more." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://hercules-cdn.com/cdn-cgi/image/w=1200,h=630,q=85,fit=cover,format=auto/file_QoCn5kteiO2JKY4QqpPxMV2K" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://hercules-cdn.com/cdn-cgi/image/w=1200,h=630,q=85,fit=cover,format=auto/file_QoCn5kteiO2JKY4QqpPxMV2K" />
+    <meta name="twitter:site" content="@usehercules" />
+
+    <!-- PWA Configuration -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#cc0000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="DatCARDVault" />
+    <link rel="apple-touch-icon" href="/icon/icon-192.png" />
+
+    <!-- Privacy & Permissions Policy — only camera and bluetooth are used -->
+    <meta http-equiv="Permissions-Policy" content="camera=(self), bluetooth=(self), microphone=(), geolocation=(), payment=(), usb=()" />
+
+    <!-- Fonts — only load the 3 actually used: Montserrat, Inter, Geist Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+      crossorigin
+    />
+
+    <!-- Apply theme before paint to prevent flash of wrong theme on load -->
+    <script>
+      try {
+        // Check app-persisted theme first (set by useAppTheme after login)
+        var dcvTheme = localStorage.getItem("dcv_theme");
+        if (dcvTheme === "grey") {
+          // grey uses light palette
+        } else if (dcvTheme === "light") {
+          // no class needed
+        } else if (dcvTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          // No saved theme yet — default to dark (app default)
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    </script>
+
+    <link href="/src/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
